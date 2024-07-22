@@ -1,0 +1,53 @@
+body {
+    font-family: 'Verdana', sans-serif;
+    background-image: url('https://i.imgur.com/aVrOVAB.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h1 {
+    margin: 0 0 20px;
+}
+
+.buttons {
+    margin: 20px 0;
+}
+
+button {
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+.output {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-size: 16px;
+}
