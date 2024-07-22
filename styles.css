@@ -1,53 +1,62 @@
-body {
-    font-family: 'Verdana', sans-serif;
-    background-image: url('https://i.imgur.com/aVrOVAB.jpeg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+/* General styles */
+body, html {
+    height: 100%;
     margin: 0;
+    font-family: Verdana, sans-serif;  /* Set the font to Verdana */
+    background: url('https://i.imgur.com/aVrOVAB.jpeg') no-repeat center center fixed;  /* Set the background image */
+    background-size: cover;  /* Ensure the background image covers the entire page */
 }
 
+/* Container for the title and buttons */
 .container {
-    text-align: center;
-    color: white;
-    background: rgba(0, 0, 0, 0.5);
-    padding: 20px;
-    border-radius: 10px;
+    text-align: center;  /* Center the text */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);  /* Center the container on the page */
+    color: white;  /* Set the text color to white */
 }
 
-h1 {
-    margin: 0 0 20px;
+/* Title text styles */
+.title {
+    font-size: 48px;  /* Set the font size for the title */
+    font-weight: bold;  /* Make the title text bold */
+    margin-bottom: 30px;  /* Add some space below the title */
 }
 
-.buttons {
-    margin: 20px 0;
-}
-
+/* Button styles */
 button {
-    font-size: 18px;
-    padding: 10px 20px;
-    margin: 0 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: all 0.3s ease;
+    display: inline-block;  /* Display buttons inline */
+    font-size: 20px;  /* Set the font size for buttons */
+    padding: 10px 20px;  /* Add padding inside the buttons */
+    margin: 10px;  /* Add some space around the buttons */
+    border: none;  /* Remove default border */
+    border-radius: 25px;  /* Make the button edges rounded */
+    cursor: pointer;  /* Change the cursor to pointer on hover */
+    transition: all 0.3s ease;  /* Smooth transition for hover effects */
+    background-color: rgba(255, 255, 255, 0.8);  /* Set button background color with transparency */
+    color: black;  /* Set button text color */
 }
 
+/* Glow effect on button hover */
 button:hover {
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);  /* Add a glowing effect on hover */
 }
 
+/* Button click animation */
 button:active {
-    transform: scale(0.95);
+    transform: scale(0.95);  /* Slightly shrink the button when clicked */
 }
 
-.output {
-    background: rgba(0, 0, 0, 0.7);
-    padding: 20px;
-    border-radius: 10px;
-    margin-top: 20px;
-    font-size: 16px;
+/* Output box styles */
+#output {
+    margin-top: 30px;  /* Add some space above the output box */
+    background-color: rgba(0, 0, 0, 0.5);  /* Set background color with transparency for the output box */
+    color: white;  /* Set the text color to white */
+    padding: 20px;  /* Add padding inside the output box */
+    border-radius: 10px;  /* Make the output box edges rounded */
+    max-width: 80%;  /* Limit the width of the output box */
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.5;  /* Set the line height for better readability */
 }
