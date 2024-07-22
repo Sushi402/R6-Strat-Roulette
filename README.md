@@ -24,11 +24,11 @@ Clicking the "Defending Strategies" button will give you a random strategy desig
 
 ## Contributing
 
-If you have any fun and creative strategies to add or if you find any bugs, feel free to contribute! Submit a pull request or open an issue to suggest new strategies or improvements.
+If you have any fun and creative strategies to add feel free to contribute! Submit a pull request or open an issue to suggest new strategies or improvements.
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License.
 
 ---
 
